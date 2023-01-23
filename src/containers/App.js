@@ -4,6 +4,7 @@ import './App.css';
 import LandingPage from '../components/LandingPage';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
+import Footer from '../components/Footer'
 // importo los componentes About y City
 import About from '../components/About';
 import City from '../components/City';
@@ -58,6 +59,7 @@ function App() {
       <Route exact path='/home' render={() =>  <Cards cities={cities} onClose={onClose} />}/>
       <Route exact path='/ciudad/:ciudadId' 
              render={({match}) => (<City city={onFilter(match.params.ciudadId)}/>)}/>
+      <Route path='/home' render={() => <Footer/>}/>
       <hr />
     </div>
   );

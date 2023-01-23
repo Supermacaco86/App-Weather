@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './App.css';
+import LandingPage from '../components/LandingPage';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
 // importo los componentes About y City
@@ -51,9 +52,10 @@ function App() {
   }
   return (
     <div className="App">
-      <Route path='/' render={() => <Nav onSearch={onSearch} />}/>
+      <Route exact path='/'render={()=> <LandingPage/>}/> 
+      <Route path='/home' render={() => <Nav onSearch={onSearch} />}/>
       <Route path='/about' component={About}/>
-      <Route exact path='/' render={() =>  <Cards cities={cities} onClose={onClose} />}/>
+      <Route exact path='/home' render={() =>  <Cards cities={cities} onClose={onClose} />}/>
       <Route exact path='/ciudad/:ciudadId' 
              render={({match}) => (<City city={onFilter(match.params.ciudadId)}/>)}/>
       <hr />

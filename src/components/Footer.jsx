@@ -26,7 +26,7 @@ export default function footer (){
             <i class="bi bi-envelope"></i>
           </a>
         </div>
-        <div class="derechos-de-autor">Creado por Martin Figueroa (2022) &#169;</div>
+        <div class="derechos-de-autor">Creado por Martin Figueroa (2023) &#169;</div>
       </footer>
         
     )

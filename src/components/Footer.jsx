@@ -8,7 +8,7 @@ export default function footer (){
         
         <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
         {/* <img class="footer-logo" src="almuerzo-cohete.png" alt="logo de portafolio"/> */}
-        <p class="footer-texto text-center">Aprendo y creo todos los días.<br/>Creemos un proyecto juntos.</p>
+        {/* <p class="footer-texto text-center">Aprendo y creo todos los días.<br/>Creemos un proyecto juntos.</p> */}
         <div class="iconos-redes-sociales d-flex flex-wrap align-items-center jutify-content-center">
           <a href="https://twitter.com/supermacaco86" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-twitter"></i>

@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar.jsx';
-import './Nav.css';
+import '../components/Nav.css';
 //importo Link
 import { Link } from "react-router-dom"
 //dentro del componente hago los linkeos necesarios.
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 function Nav({onSearch}) {
   return (
-    <nav class="navbar seccion-oscura navbar-expand-lg bg-body-tertiary">
+    <nav class="seccion-oscura navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
        <a class="navbar-brand" href='/'>
          Weather App
@@ -22,28 +22,15 @@ function Nav({onSearch}) {
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">Link</a>
+          <a class="nav-link" href="/about">About</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></hr></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+        
       </ul>
-      </div>
       {/* <Link to='/about'>
         <span>About</span>
       </Link> */}
         <SearchBar onSearch={onSearch}/>
+        </div>
         </div>
     </nav>
   );
